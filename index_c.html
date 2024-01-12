@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./style_c.css" />
+    <link rel="stylesheet" media="screen and (max-width: 640px)" href="style_c_small.css">
+    <link rel="stylesheet" href="style_C_form.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+  <body>
+    <header class="header">
+      <i href="#" class="logo">WL</i>
+      <nav class="navbar">
+        <div class="labels">
+          <a href="#">chat</a>
+          <a href="#">agent</a>
+          <a href="#">mailto</a>
+          <a href="#">calendar</a>
+          <a href="#">reviews</a>
+        </div>
+      </nav>
+      <div class="navbtn">
+        <ul>
+          <a href="index_landing.html"><i class='bx bx-home-alt-2'></i></a>
+        </ul>
+      </div>
+      <div class="navbtn">
+        <ul>
+          <li><a href="#"><i class='bx bx-menu'></i></a>
+            <ul class="dropdown">
+              <li><a href="index_landing.html">home</a></li>
+              <li><a href="index_log.html">students</a></li>
+              <li><a href="#">map</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="contact">
+      <h2>Contact Form</h2>
+        <form action="#">
+          <div class="input-box">
+            <div class="input-field field">
+              <input type="text" placeholder="Full Name" id="name"
+              class="item" autocomplete="off" onkeyup=validateName()>
+              <div class="error-txt"></div>
+            </div>
+            <div class="input-field field">
+              <input type="text" placeholder="email address" id="email"
+              class="item" autocomplete="off">
+              <div class="error-txt"></div>
+            </div>
+          </div>
+          <div class="input-box">
+            <div class="input-field field">
+              <input type="text" placeholder="Phone number" id="phone"
+              class="item" autocomplete="off">
+              <div class="error-txt"></div>
+            </div>
+            <div class="input-field field">
+              <input type="text" placeholder="Subject" id="subject"
+              class="item" autocomplete="off">
+              <div class="error-txt"></div>
+            </div>
+          </div>
+
+          <div class="textarea-field field">
+            <textarea name="" id="msg" cols="30" rows="10"
+            placeholder="Type your message" class="item error"
+            autocomplete="off"></textarea>
+            <div class="error-txt"></div>
+          </div>
+          <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <script>
+    var nameError = document.getElementById('error-txt');
+    var phoneError = document.getElementById('error-txt');
+    var emailError = document.getElementById('error-txt');
+    var subjectError = document.getElementById('error-txt');
+    var msgError = document.getElementById('error-txt');
+
+    function validateName(){
+      var name = document.getElementById('name').value;
+
+      if(name.length == 0){
+          nameError.innerHTML = 'Name cannot be blank';
+          return false;
+      }
+      if (!name.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)){
+          nameError.innerHTML = 'Please type your name';
+          return false;
+      }
+      nameError.innerHTML = "<i class='bx bx-check'></i>";
+      return true;
+    }
+    </script>
+
+  </body>
+</html>

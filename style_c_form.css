@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #43FE3F 0%, rgba(243, 243, 243, 0) 100%);
+}
+
+.contact {
+  height: 544px;
+}
+.contact h2 {
+  caret-color: #454545;
+  text-align: center;
+  margin-bottom: 4px;
+  font-size: 2em; /* large fonts */
+  color: #454545;
+  font-weight: 600; /* bolder fonts */
+  text-decoration: none;
+}
+
+.contact form {
+  max-width: 600px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+form .input-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-box .input-field {
+  max-width: 49%; /* gap between the 2 3rd input fields */
+}
+
+.field .item {
+  width: 100%; /* field items are the input boxes */
+  padding: 16px;
+  background: transparent;
+  border: 2px solid #454545;
+  outline: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #454545;
+  margin: 8px 0;
+}
+
+.field.error .item {
+  border-color: red; /* #d93025 red */
+}
+
+.field .item::placeholder {
+  color: #454545 rgba(255, 255, 255, 0.3); /*rgba(255, 255, 255, 0.3) fade*/
+}
+/* .field .error-text grabs the "error-txt" selector */
+.field .error-txt {
+  font-size: 14px;
+  color: red;
+  text-align: left;
+  margin: -5px 0 10px;
+  display: contents;  /* activate to hide red error text by default*/
+}
+
+.input-field .error-text i {
+  color: #454545;
+}
+
+form .textarea-field .item {
+  resize: none;  /* to (not) change the size of the text space */
+}
+
+.field .error-txt .item {
+  resize: none; /* to (not) change the size of the text box */
+}
+
+.field .textarea-field .error-txt {
+  margin-top: -10px; /* red text below the input box */
+}
+
+form button {
+  padding: 8px 24px;
+  background: #A2F41B;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 20px #A2F41B;
+  font-size: 16px;
+  color: #454545;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: .5s;
+}
+
+form button:hover {
+  box-shadow: none; /* the shadow effect vanishes on mouse-over */
+}
+
+/* Media Query Breakpoint 1 at max container width width for desktop 1440px */
+/* screen size between 912px-1120px*/
+  @media screen and (max-width: 1120px) {
+    section {
+      max-width: auto; /* for the width to adjust horizontally */
+      max-height: 80%;
+    }
+  }
+
+  /* Media Query Breakpoint 4 */
+/* screen size between 520px-640px*/
+  @media screen and (max-width: 640px) {
+    section {
+      max-width: auto; /* for the width to adjust horizontally */
+      max-height: auto;
+    }
+  }
+
+  /* Media Query Breakpoint 5 additional to diminish oversized items */
+   /* screen size between 432px-520px*/
+    @media screen and (max-width: 520px) {
+      section {
+        max-width: auto; /* for the width to adjust horizontally */
+        max-height: 60%;
+      }
+    }

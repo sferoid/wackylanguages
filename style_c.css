@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+body {
+  /*display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+  background: #E7F7CE; url('img.jpg') no-repeat; */
+} /* background-size:cover; background-position:center; */
+
+.header {
+  display: inline-flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: stretch;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 16px; /* inner space less top and bottom */;
+  background-color: #A2F41B; /* change to transparent to appear after hover */
+  margin-bottom: 4px;
+}
+
+.logo {
+  display: flex; /* field around item fits around */
+  position: sticky; /* stick while scrolling */
+  font-size: 32px;
+  color: #454545; brown
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 700;
+  font-weight: 900;
+  border-radius: 16px;
+  border: 1px solid #A2F41B; /*  */
+  box-shadow: inset 0px 8px 8px rgba(0, 0, 0, 0.25);
+  text-shadow: 4px 4px #A2F41B;
+  padding: 8px; /* inner space less top and bottom */
+  margin-left: 8px;
+  margin-right: auto; /* to keep the logo to the left of the header */
+}
+.logo i {
+  align-self: flex-end;
+}
+
+.navbtn { /* icons field */
+  display: inline-flex; /* field around item fits around */
+  justify-content: flex-end;
+  position: sticky; /* stick while scrolling */
+  margin-right: 8px;
+  margin-left: 8px; /* to keep the navbtn to the right of the header */
+  padding: 8px; /* inner space less top and bottom */
+  align-items: flex-end;
+  background-color: #A2F41B; /* limy green */
+  border-radius: 16px;
+  box-shadow: inset 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.navbtn ul a { /* icons */
+  font-size: 2em; /* large fonts */
+  color: #454545;
+  font-weight: 500; /* bolder fonts */
+  text-decoration: none;
+  padding: 8px 24px; /* space between icons */
+}
+
+.navbtn ul a:hover {
+  color: lime;
+  opacity: 0.25;
+  transition: 1s;
+}
+
+.navbtn ul li {
+  list-style: none;
+  background-color: inherit;
+  line-height: 24px;
+}
+ul li ul.dropdown {
+  width: auto;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+ul li a:hover {
+  background: yellow;
+}
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+.navbar {
+  display: inline-flex; /* to align 2 items in the search field */
+  align-items: baseline; /* to make text align in all nav field items */
+  padding: 8px 16px; /* inner space less top and bottom */
+}
+
+.navbar a {
+  position: relative; /* relative to the header */
+  line-height: 48px; /* to accommodate text */
+  margin-left: 32px;
+  margin-right: 32px;
+  font-size: 2em; /* large fonts */
+  color: #454545;
+  font-weight: 500; /* bolder fonts */
+  text-decoration: none;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%; /* changes the overscore to underscore from zero to 100% */
+  left: 0;
+  width: 0; /* set to zero to disappear - instead of h=100% - add transition */
+  height: 2px; /* makes topbar reappear - instead of h=100% */
+  background: #454545; /* #FFE5BE topbar text/anchors disappear when top=0 */
+  transition: .3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+ .navbar ul li {
+   text-decoration: none; /*default;*/
+   width: 32px;
+   }
+
+/* Contact form
+.contact {
+  justify-content: center;   add to form
+  align-items: center; /*  add to form
+  min-height: 100vh;
+} */
+
+
+/* Media Query Breakpoint 1 at max container width width for desktop 1440px */
+/* screen size between 912px-1120px*/
+/* change the main axis to vertical to extend responsive display */
+@media screen and (max-width: 1120px) {
+     header {
+    /*   display: block;  to make items stack on top of each other */
+       /* flex-direction: column;  to change the main axis to vertical */
+       max-width: auto; /* for the width to adjust horizontally */
+       max-height: 80%;
+     }
+     header .logo {
+       max-width: 90%;
+       flex-shrink: 1;
+       font-size: auto;
+       margin-bottom: auto; /* to keep the margin from expanding */
+     }
+     .navbar .labels {
+       display: inline-block;
+       align-items: center;
+       padding: auto;
+       justify-content: space-around;
+       margin: auto;
+       margin-bottom: auto; /* to keep the margin from expanding */
+     }
+     .navbar .navbtn {
+       display: inline-block; /* nav icons align horizontally */
+       /*flex-direction: column;   to change the main axis to vertical */
+       /*flex-wrap: wrap; */
+       align-items: stretch;
+       padding: auto;
+       margin: auto; /* spread icons 4px apart */
+       justify-content: space-around;
+       margin-bottom: auto; /* to keep the margin from expanding */
+       }
+     .navbar .navbtn ul {
+       display: inline-block;
+       /* flex-direction: column; */
+
+     }
+   }
+
+/*Media Query Breakpoint 2 added width of 3 columns 2fr+3fr+2fr downscaled*/
+   /* screen size between 640px-912px*/
+    @media screen and (max-width: 912px) {
+      header {
+        max-width: auto;
+        max-height: auto;
+      }
+      .logo .navbtn {
+        max-height: auto;
+        margin-bottom: auto;
+      }
+      .navbtn ul a {
+        margin-bottom: auto;
+        max-height: auto;
+      }
+      .navbar {
+        display: inline-block;
+        max-height: auto;
+        margin-bottom: auto;
+      }
+     .navbar .labels {
+       display: inline-block;
+       justify-content: space-around;
+       max-width: auto;
+       max-height: auto;
+       padding: auto;
+       margin-left: 2px;
+       margin-bottom: auto; /* to keep the margin from expanding */
+       font-size: 12px; /* smaller fonts */
+     }
+     .navbar .labels a {
+       display: inline-block;
+       align-items: center;
+       padding: auto;
+       margin-right: 0.5px;
+       font-size: 2em; /* smaller fonts */
+     }
+   }

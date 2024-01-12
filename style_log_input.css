@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+.login {
+  display: flex; /* to make items adjust to the centre-screen */
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background: linear-gradient(180deg, #43FE3F 0%, rgba(243, 243, 243, 0) 50%);; /* url('img.jpg') */
+} /* background-size:cover; background-position:center; */
+ .wrapper {
+   display: block; /* value block to create 2 rows for links and icons*/
+   width: 420px;
+   background: #A2F41B; /* or transparent; */
+   color: #E7F7CE; /* background white*/
+   border: 2px solid yellow; /* backdrop-filter: blur(20px); */
+   box-shadow: 0 0 10px rgba(0, 0, 0, .2); /* faint; */
+   border-radius: 10px; /* border:; */
+   padding: 24px 32px;
+ }
+
+ .wrapper form {
+  margin: 8px;
+ }
+
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #454545; /*custom brown*/
+}
+
+.wrapper .input-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 16px 0 16px;
+  max-height: 65px; /* matches JS function: nameField.style.maxHeight */
+  transition: max-height 0.5s; /* matches JS function: hide timing */
+  overflow: hidden; /* hidden when height is zero */
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid #454545; /*custom brown*/
+  border-radius: 40px;
+  font-size: 16px;
+  color: #454545; /*custom brown*/
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #454545; /*custom brown*/
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #454545; /*custom brown*/
+}
+
+#nameField_error {
+  font-size: 14px;
+  color: red;
+  margin: -5px 0 10px;
+  font-weight: 100;
+  position: relative;
+  font-display: fallback;
+  top: 25px;
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+  color: #454545; /*custom brown*/
+}
+
+.remember-forgot label input {
+  margin-right: 3px;
+  margin-top: 8px;
+}
+
+.remember-forgot a {
+  color: #454545; /*custom brown*/
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn-field{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .btn-field button{
+  flex-basis: 48%; /*  splits the button field into 2 buttons  */
+  height: 45px;
+  background: yellow;  /*  #E7F7CE background  */
+  border: none;
+  outline: 600;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1); /*  update  */
+  cursor: pointer;
+  font-size: 16px;
+  color: #454545; /*custom brown*/
+  font-weight: 600;
+}
+
+.register-link p {
+  color: #454545;
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color: #454545; /*custom brown*/
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}

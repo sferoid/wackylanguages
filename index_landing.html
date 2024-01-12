@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style_landing.css">
+  <link rel="stylesheet" media="screen and (max-width: 520px)" href="style_landing_small.css">
+  <!---HTML elements jQuery Hide/Show--->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+    });
+  $("#show").click(function(){
+    $("p").show();
+    });
+  });
+  </script>
+    <!---boxicons link--->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <div class="grid-container">
+    <header>
+      <h1>WACKY LANGUAGES</h1>
+    </header>
+    <nav>
+      <ul>
+        <li> <!---Block of boxicon navigation links with tooltip--->
+          <div class="tooltip"><a href="index_log.html"><i class='bx bx-group'></i></a>
+            <span class="tooltiptext">students</span></div>
+          <div class="tooltip"><a href="#"><i class='bx bxs-group'></i></a>
+            <span class="tooltiptext">staff</span></div>
+          <div class="tooltip"><a href="#"><i class='bx bx-conversation'></i></a>
+            <span class="tooltiptext">chat</span></div>
+          <div class="tooltip"><a href="#"><i class='bx bx-question-mark'></i></a>
+            <span class="tooltiptext">top 10 QA </span></div>
+          <div class="tooltip"><a href="#"><i class='bx bx-phone-call'></i></a>
+            <span class="tooltiptext">callback</span></div>
+          <div class="tooltip"><a href="index_c.html"><i class='bx bx-envelope'></i></a>
+            <span class="tooltiptext">mail to</span></div>
+          <div class="tooltip"><a href="#"><i class='bx bx-support'></i></a>
+            <span class="tooltiptext">agent</span></div>
+          <div class="tooltip"><a href="#"><i class='bx bx-globe'></i></a>
+            <span class="tooltiptext">translate</span></div>
+          <div class="tooltip"><a href="#"><i class='bx bxs-megaphone'></i></a>
+            <span class="tooltiptext">voice over</span></div>
+          <div class="tooltip"><a href="#"><i class='bx bx-braille'></i></a>
+            <span class="tooltiptext">braille</span></div>
+          <div class="tooltip"><a href="#"><i class='bx bx-low-vision'></i></a>
+            <span class="tooltiptext">low vision</span></div>
+          <div class="tooltip"><a href="#"><i class='bx bx-message-alt-edit'></i></a>
+            <span class="tooltiptext">review</span></div>
+        </li>
+      </ul>
+    </nav>
+    <article>
+      <h2>Greetings!</h2>
+      <div>
+        <video width="400" controls>
+          <source src="lettering.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h3>What can you learn here?</h3>
+      <p>WL is a school dedicated hobbies where organic but unusual languages are taught.
+          From sign language to tactile signing as well as revived and whistled languages.
+          It is even possible to learn and emulate communication in the realms of animals and insects.
+          The question may be asked, to whom may such a school be useful?  Well, not to those in pursuit of a typical hobby.
+          The most likely hobbyist is someone who is not able to take part in a typical free time activity
+          or simply prefers spending their time in a more unusual way.</p>
+      <img src="scroll.jpg" alt="scripture"> <!---picture--->
+    </article>
+    <aside>
+      <h2>Hobbies</h2>
+        <!---card 1--->
+        <div class="card">
+          <h1>Which languages?</h1>
+            <h5>
+              <p>Vernacular, whistled, endangered, extinct & revived languages.</p>
+            </h5>
+        </div>
+        <!---card 2--->
+        <div class="card">
+          <h3>Animals?</h3>
+            <h5>
+              <p>Bee dance, bird song and pet body language.</p>
+            </h5>
+        </div>
+        <!---card 3--->
+        <div class="card">
+          <h3>Art forms?</h3>
+            <h5>
+              <p>Calligraphy, choirs, painting.</p>
+            </h5>
+        </div>
+        <!---card 4--->
+        <div class="card">
+          <h3>Courses?</h3>
+            <h5>
+              <p>Evenings, Saturdays, weekends and on retreats.</p>
+            </h5>
+        </div>
+    </aside>
+    <footer>
+      <div class="footercontainer">
+          <!---Block 1--->
+          <div class="footnav">
+            <ul class="links"> <!---all li tags necessary for alignment--->
+              <li><h4><a href="">About us</a></h4></li>
+              <li><a href="">Mission</a></li>
+              <li><a href="">Accreditation</a></li>
+              <li><a href="">Policy</a></li>
+            </ul>
+          </div>
+          <!---Block 2--->
+          <div class="footnav">
+            <ul class="links"> <!---all li tags necessary for alignment--->
+              <li><h4><a href="">Where we are</a></h4></li>
+              <li><a href="">Map</a></li>
+              <li><a href="">Find us</a></li>
+              <li><a href="">Locations</a></li>
+            </ul>
+          </div>
+          <!---Block 3--->
+          <div class="footnav">
+            <ul class="links"> <!---all li tags necessary for alignment--->
+              <li><h4><a href="">Students</a></h4></li>
+              <li><a href="">Student log in</a></li>
+              <li><a href="">Calendar</a></li>
+              <li><a href="">Accommodation</a></li>
+            </ul>
+          </div>
+          <!---Block 4--->
+          <div class="footnav">
+            <ul class="links"> <!---all li tags necessary for alignment--->
+              <li><h4><a href="">Staff</a></h4></li>
+              <li><a href="">Staff log in</a></li>
+              <li><a href="">Office</a></li>
+              <li><a href="">Contacts</a></li>
+            </ul>
+          </div>
+          <!---Block 5--->
+          <div class="footnav">
+            <ul class="links"> <!---all li tags necessary for alignment--->
+              <li><h4><a href="">Reviews</a></h4></li>
+              <li><a href="">Ratings</a></li>
+              <li><a href="">Feedback</a></li>
+              <li><a href="">Gallery</a></li>
+            </ul>
+          </div>
+          <!---Block 6--->
+          <div class="footnav">
+            <ul class="links">
+              <li><h4><a href="">Useful links</a></h4>
+              <li><a href="">Internal</a></li>
+              <li><a href="">External</a></li>
+              <li><a href="index_c.html">Forms</a></li>
+              </li>
+            </ul>
+          </div>
+        <hr> <!---dividing line vertical or horizontal---->
+        <!---Block of boxicon social media links--->
+          <div class="footnav">
+            <ul class="quick">
+              <a href="#"><i class='bx bxl-facebook-square'></i></a>
+              <a href="#"><i class='bx bxl-twitter'></i></a>
+              <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+              <a href="#"><i class='bx bx-globe'></i></a>
+              <a href="#"><i class='bx bx-phone-call'></i></a>
+            </ul>
+          </div>
+          <div class="col">
+            <p>&#169; 2023 Student Website</p><!---html code for Copyright---->
+          </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

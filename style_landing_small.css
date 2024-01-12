@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+
+body {
+  margin: 4px;
+  font-family: "Inter";
+  background: #E7F7CE;
+}
+ul, li {
+  color: #565A51;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 10px;
+  line-height: 12px;
+  list-style-type: none;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  margin: 4px;
+  gap: 1em;
+  grid-template-columns: 4fr;
+  background: linear-gradient(180deg, #F9F7D4 0%, rgba(217, 217, 217, 0) 50%);
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+  border: 1px solid #FFE5BE;
+  border-radius: 8px;
+}
+
+header {
+  flex: auto;
+  align-content: center;
+  border-bottom: 1px solid #FFE5BE;
+  background: linear-gradient(180deg, #43FE3F 0%, rgba(243, 243, 243, 0) 100%);
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+  border-radius: 8px;
+  align-items: center;
+  padding: 2px 4px;
+  font-weight: 650;
+  font-size: 16px;
+  line-height: 18px;
+  color: #454545;
+  text-shadow: 4px 4px #A2F41B;
+}
+nav {
+  align-items: baseline;
+  text-decoration: none; /*default;*/
+  padding: 4px;
+  border-right: 1px solid #FFE5BE;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #43FE3F 0%, rgba(243, 243, 243, 0) 100%);
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+}
+
+nav ul li a {
+  flex: auto;
+  line-height: 12px;
+  margin-left: 4px;
+  font-size: 5em;
+  color: #454545;
+  border-right: 1px solid #FFE5BE;
+  border-radius: 8px;
+  padding: 4px;
+  width: auto;
+}
+nav ul li a:hover {
+  color: lime;
+  opacity: 0.25;
+  transition: 1s;
+}
+nav ul li a:hover {
+  color: lime;
+  opacity: 0.25;
+  transition: 1s;
+}
+nav .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px solid #FFE5BE;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 60px;
+  background-color: #454545;
+  color: #FFE5BE;
+  text-align: center;
+  border-radius: 4px;
+  padding: 2px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  left: 25%;
+  margin-left: -30px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+  margin-left: : 4px;
+  border: 1px solid #FFE5BE;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  background: linear-gradient(180deg, #43FE3F 0%, rgba(243, 243, 243, 0) 25%);
+}
+article h2 {
+  max-width: inherit;
+  color: #454545;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 1.5em;
+  line-height: 12px;
+  text-shadow: 1px 1px #A2F41B;
+}
+article > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 4px;
+  margin-left: auto;
+}
+div .video {
+  max-width: 50%;
+  max-height: 50%;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+article h3 {
+  max-width: 50%;
+  color: #454545;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 1em;
+  line-height: 10px;
+  text-shadow: 1px 1px #A2F41B;
+}
+article p {
+  flex: wrap;
+  margin-top: 8px;
+  color: #454545;
+}
+article img {
+  max-width: 50%;
+  max-height: 50%;
+}
+footer { /* global footer properties*/
+  display: flex; /* to make items adjust to the centre-screen */
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 4px;
+  border-radius: 4px;
+  margin: 4px;
+  border: 1px solid #FFE5BE;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  background: linear-gradient(180deg, #43FE3F 0%, rgba(243, 243, 243, 0) 25%);
+}
+.footercontainer {
+  display: block; /* value block to create 2 rows for links and icons*/
+  text-align: justify; /* to make lists align vertically */
+  justify-content: space-around;
+  width: auto;
+  padding: 4px;
+  margin: auto;
+}
+.footnav { /* for footnav blocks to align horizontally*/
+  display: inline-block;
+ }
+.footnav .links ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-weight: 450;
+  font-size: 10px;
+  line-height: 1;
+}
+.footnav .links ul li a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 10px;
+  max-width: inherit;
+  margin: 2px;
+  opacity; 0.75;
+  transition: 1s;
+  color: #3B5A49;
+  padding: 0;
+}
+
+/* 'footnav' class ul li anchors hover over links*/
+.footnav .links li:hover {
+  color: lime;
+  opacity: 0.25;
+  transition: 1s;
+}
+.footnav .links li:hover a {
+  color: lime;
+  opacity: 0.25;
+  transition: 1s;
+}
+footer hr {
+  color: #3B5A49;
+}
+
+.footnav .quick { /* global footer social media properties*/
+  padding: 2px;
+  color: #3B5A49;
+  margin: 0px;
+  transition: 0.5s;
+}
+.quick a { /* properties of social media anchor tags*/
+  display: inline-block; /* how the social media icons are grouped & aligned*/
+  text-decoration: none;
+  text-align: center; /* center of page*/
+  font-size: 10px;
+  color: #3B5A49;
+  height: inherit;
+  border-radius: 4px;
+  margin: 0px;
+}
+.quick a i{
+  font-size: 1em;
+  color: #454545;
+  opacity: 0.9;
+}
+/* 'quick' class anchors hover over icons */
+.quick a:hover i {
+  color: lime;
+  transition: 1s;
+}
+.col {
+  display: inherit;
+  margin-top: 4px;
+}
+.col p {
+  text-align: center;
+  font-size: 10px;
+  color: #454545;  /* brown */
+
+}
+
+/* Media Query Breakpoint 4 */
+/* screen size between 520px-640px*/
+/* query not necessary */
+/* @media screen and (max-width: 640px)*/
+
+/* Media Query Breakpoint 5 additional to diminish oversized items */
+/* screen size between 432px-520px*/
+ @media screen and (max-width: 520px)
+.grid-container {
+  .grid-container {
+    grid-column: 2 / span 1; /* all containers to fit into the middle one */
+  }
+  header {
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 auto;
+  }
+  article h2 {
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 auto;
+    font-size: 1.2rem; /* reduce font size */
+    padding: 1px;
+    font-weight: 300;
+    line-height: 1.8rem;
+    color: #454545;
+    text-shadow: 4px 4px #A2F41B;
+  }
+}
+
+/* Media Query Breakpoint 6 additional to diminish oversized items */
+/* breach of video frame and h1 */
+/* screen size between 360px-432px*/
+@media screen and (max-width: 432px) {
+  .grid-container {
+    display: flex;
+  }
+  header {
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 auto;
+  }
+  header h1 {
+    font-size: 1.1rem; /* reduce font size */
+  }
+  article h2 {
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 auto;
+    font-size: 1.1rem; /* reduce font size */
+    padding: 1px;
+    font-weight: 200;
+    line-height: 1.6rem;
+    color: #454545;
+    text-shadow: 2px 2px #A2F41B;
+  }
+  article .video {
+    display: flex;
+    margin-left: 4px;
+    max-width: 10%;
+  }
+  article p {
+    max-width: 312px;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin-left: : auto;
+  }
+}
+
+
+
+/* Media Query Breakpoint 7 phone iPhone SE- 1 320px width*/
+/* screen size between 320px-360px*/
+/* diminish oversized items */
+/* breach of video frame and h1 */
+/* no query necessary

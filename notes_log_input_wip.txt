@@ -1,0 +1,48 @@
+  // JS actionable elements called by ID when clicking //
+  let signupBtn = document.getElementById("signupBtn")
+  let signinBtn = document.getElementById("signinBtn")
+  let nameField = document.getElementById("nameField")
+  let title = document.getElementById("title")
+
+  // nameField function to disable Register/SignUp button on clicking Sign in //
+signinBtn.onclick = function(){
+  nameField.style.maxHeight = "0"; // hides nameField see css input field//
+  title.innerHTML = "Sign In"; // to change the title to match the selection //
+  signupBtn.classList.add("disable"); // to grey out signinBtn on signup//
+  signinBtn.classList.remove("disable"); // to reactivate signinBtn on signin //
+}
+
+// nameField function to disable login/Signin button on clicking Sign Up //
+signupBtn.onclick = function(){
+  nameField.style.maxHeight = "60px"; // unhides user/nameField see css input field//
+  title.innerHTML = "Register"; // to change the title to match the selection //
+  signupBtn.classList.remove("disable"); // to change signinBtn colour on signup//
+  signinBtn.classList.add("disable"); // to reactivate signinBtn on signin //
+}
+
+
+
+<script>
+  // JS actionable elements called by ID when clicking //
+  let signupBtn = document.getElementById("signupBtn")
+  let signinBtn = document.getElementById("signinBtn")
+  let nameField = document.getElementById("nameField")
+  let title = document.getElementById("title")
+
+  // nameField function to disable Register/SignUp button on clicking Sign in //
+signinBtn.onclick = function(){
+  nameField.style.maxHeight = "0"; // hides nameField see css input field//
+  title.innerHTML = "Sign In"; // to change the title to match the selection //
+  signupBtn.classList.add("disable"); // to grey out signinBtn on signup//
+  signinBtn.classList.remove("disable"); // to reactivate signinBtn on signin //
+}
+
+// nameField function to disable login/Signin button on clicking Sign Up //
+signupBtn.onclick = function(){
+  nameField.style.maxHeight = "60px"; // unhides user/nameField see css input field//
+  title.innerHTML = "Register"; // to change the title to match the selection //
+  signupBtn.classList.remove("disable"); // to change signinBtn colour on signup//
+  signinBtn.classList.add("disable"); // to reactivate signinBtn on signin //
+}
+
+  </script>

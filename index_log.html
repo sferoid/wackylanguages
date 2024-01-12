@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./style_log.css" />
+    <link rel="stylesheet" media="screen and (max-width: 640px)" href="style_log_small.css">
+    <link rel="stylesheet" href="style_log_banner.css">
+    <link rel="stylesheet" href="style_log_input.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <header class="header">
+      <i href="#" class="logo">WL</i>
+      <nav class="navbar">
+        <div class="labels">
+          <a href="#">chat</a>
+          <a href="#">agent</a>
+          <a href="#">mail to</a>
+          <a href="#">calendar</a>
+          <a href="#">reviews</a>
+        </div>
+      </nav>
+      <div class="navbtn">
+        <ul>
+          <a href="index_landing.html"><i class='bx bx-home-alt-2'></i></a>
+        </ul>
+      </div>
+      <div class="navbtn">
+        <ul>
+          <li><a href="#"><i class='bx bx-menu'></i></a>
+            <ul class="dropdown">
+              <li><a href="index_landing.html">home</a></li>
+              <li><a href="index_c.html">forms</a></li>
+              <li><a href="#">map</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <div class="banner-image">
+        <div class="banner-text">
+          <h1 style="font-size:50px">Offer</h1>
+          <h3>80% discount</h3>
+          <button id="btn">apply</button>
+        </div>
+      </div>
+    </div>
+    <div class="login">
+      <div class="wrapper">
+        <form action="" id="form">
+          <h1 id="title">Login</h1>
+
+          <div class="input-box" id="nameField">
+            <input type="text" placeholder="Username" required>
+            <i class='bx bx-user'></i>
+          </div>
+
+          <div class="input-box" id="email">
+            <input type="email"  placeholder="Email" required>
+            <i class='bx bx-at'></i>
+            <span id="email_error"></span>
+          </div>
+
+          <div class="input-box">
+            <input type="password" id="password" placeholder="Password" required>
+            <i class='bx bx-lock-alt'></i>
+            <span id="password_error"></span>
+          </div>
+
+          <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <div class="btn-field">
+          <button type="submit" id="signupBtn" class="btn">Register</button>
+          <button type="submit" id="signinBtn" class="disable">Sign in</button>
+          </div>
+
+          <div class="register-link">
+            <p>Don't have an account? <a href="#">Register</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="footercontainer">
+        <div class="footnav">
+          <ul class="quick">
+            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bx-globe'></i></a>
+            <a href="#"><i class='bx bx-phone-call'></i></a>
+          </ul>
+        </div>
+        <div class="col">
+          <p>&#169; 2023 Student Website</p><!---html code for Copyright---->
+        </div>
+      </div>
+    </footer>
+  <script src="script_log.js"></script>
+  </body>
+</html>
