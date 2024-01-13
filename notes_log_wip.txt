@@ -1,18 +1,1 @@
-A2 Login v10 wip
 
-unfinished
-
-the CSS for event_error(s) incomplete,
-drafted,
-
-#nameField_error {
-  font-size: 14px;
-  color: red;
-  margin: -5px 0 10px;
-  font-weight: 100;
-  position: relative;
-  font-display: fallback;
-  top: 25px;
-}
-
-java script for errors interfering with toggle JS
